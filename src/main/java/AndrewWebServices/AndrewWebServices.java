@@ -9,11 +9,13 @@ public class AndrewWebServices {
     Database database;
     RecSys recommender;
     PromoService promoService;
-
+    
+    
     public AndrewWebServices(Database database, RecSys recommender, PromoService promoService) {
         this.database = database;
         this.recommender = recommender;
         this.promoService = promoService;
+    
     }
 
     /*
@@ -33,7 +35,15 @@ public class AndrewWebServices {
         System.out.println("Login failed.");
         return false;
     }
+    // public String registerUser(int id, String name) {
+    //     userRepo.save(new User(id, name));
+    //     return "User registered";
+    // }
 
+    // public String logIn(int id) {
+    //     User user = userRepo.findById(id);
+    //     return user != null ? "Login successful" : "User not found";
+    // }
     /*
      * Returns a movie as recommendation to the passed user.
      * 

@@ -7,7 +7,7 @@ import java.util.concurrent.TimeUnit;
  * 
  * DO NOT MODIFY this class. 
  */
-public class Database {
+public class Database  {
     public int getPassword(String accountName) {
         try {
             TimeUnit.SECONDS.sleep(10);
